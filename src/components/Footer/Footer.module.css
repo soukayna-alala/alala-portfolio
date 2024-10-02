@@ -1,0 +1,35 @@
+.footer {
+  width: var(--page-width);
+  margin: 20px auto;
+}
+.myName {
+  color: var(--text-color);
+  font-size: 16px;
+  opacity: 0.8;
+  text-align: center;
+  padding-right: 12px;
+}
+
+.container {
+  display: grid;
+  width: 500px;
+  grid-template-columns: auto auto auto auto;
+  margin: 0 auto;
+  background-color: var(--backgroung-color-rgba);
+  border: 1px var(--backgroung-color-rgba) solid;
+  padding: 10px;
+}
+a {
+  color: var(--text-color);
+  font-size: 14px;
+  text-decoration: none;
+  align-items: center;
+  text-align: center;
+  opacity: 0.7;
+  font-weight: lighter;
+}
+
+a:hover {
+  color: #db00d8;
+  opacity: 1;
+}

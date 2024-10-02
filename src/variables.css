@@ -1,0 +1,15 @@
+:root {
+  /* colors */
+  --text-color: #fff;
+  --primary-color: #db00d8;
+
+  /* sizing */
+  --page-width: 1400px;
+  --tablet-break-point: 768px;
+  --desktop-break-point: 1024px;
+
+  /* fonts */
+  --main-font-size: 14px;
+  --h1-font-size: 36px;
+  --backgroung-color-rgba: rgba(94, 99, 99, 0.4);
+}
