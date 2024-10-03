@@ -1,10 +1,11 @@
 import styles from "./Header.module.css";
 
 export function Header() {
-  const { container } = styles;
+  const { name, container, mainContainer } = styles;
 
   return (
-    <header>
+    <header className={mainContainer}>
+      <div className={name}>Soukayna Alala</div>
       <div className={container}>
         <div>About Me</div>
         <div>Skills</div>

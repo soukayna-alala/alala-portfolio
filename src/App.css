@@ -1,0 +1,10 @@
+.container {
+  width: var(--page-width);
+  background-color: chocolate;
+  margin: 0 auto;
+}
+
+.header-container {
+  display: grid;
+  justify-content: end;
+}
