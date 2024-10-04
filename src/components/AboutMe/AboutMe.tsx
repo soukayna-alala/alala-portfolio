@@ -35,7 +35,7 @@ export function AboutMe() {
           </p>
           <p>
             My goal is to keep learning new things, <br />
-            and to improve my skills everyday, analyze and <br />
+            and to improve my skills everyday, analyse and <br />
             solve UI and programing issues. <br />
             Also being able to work independently
             <br />

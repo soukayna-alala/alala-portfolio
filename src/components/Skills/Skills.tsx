@@ -47,7 +47,7 @@ export function Skills() {
           <div className={skill}>
             <img
               className={tsIcon}
-              src="icons8-typescript.svg"
+              src="typescript.svg"
               alt="typescript icon"
             />
             <span className={span}>TypeScript</span>
