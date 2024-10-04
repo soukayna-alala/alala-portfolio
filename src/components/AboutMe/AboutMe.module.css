@@ -1,14 +1,14 @@
 .aboutMeImage {
   width: 400px;
   align-items: center;
-  margin: auto;
+  margin: 60px auto;
   border-radius: 26px;
 }
 
 .container {
   display: grid;
-  grid-template-columns: 60% 40%;
-  margin-top: 40px;
+  grid-template-columns: 66% 34%;
+  background-color: #f5f3f0;
   /*text-align: center;*/
 }
 
@@ -17,7 +17,7 @@
 }
 
 .paragraphContainer {
-  margin: 60px 0;
+  margin: 60px auto;
   align-items: center;
 
   /*background-color: yellow;*/
@@ -27,6 +27,7 @@
   padding: 30px 0;
   font-size: 90px;
   font-weight: 550;
+  margin-top: 40px;
 }
 
 .paragraph {

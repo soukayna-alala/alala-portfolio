@@ -1,0 +1,42 @@
+.myImg {
+  width: 400px;
+  border-radius: 26px;
+  /*margin: 60px auto;*/
+}
+
+.mainContainer {
+  display: grid;
+  grid-template-columns: 40% auto;
+  background-color: #f5f3f0;
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 100px;
+  background-color: green;
+  font-size: 18px;
+  color: #454544;
+  margin: 60px 0;
+}
+
+.imgContainer {
+  align-items: center;
+  margin: 60px 40px;
+}
+
+.container {
+  margin: 60px 40px;
+}
+
+.button {
+  width: fit-content;
+  height: fit-content;
+  margin-top: 57px;
+  background-color: red;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 560;
+}

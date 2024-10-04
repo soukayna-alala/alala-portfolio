@@ -7,8 +7,9 @@
   grid-template-columns: 60% 40%;
   width: var(--page-width);
   /*background-color: blue;*/
-  background-color: #f0f1ea;
-  padding: 8px;
+  background-color: #f5f3f0;
+
+  padding: 8px 0;
 }
 
 .container {
