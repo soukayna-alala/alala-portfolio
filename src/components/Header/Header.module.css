@@ -4,9 +4,11 @@
 /*}*/
 .mainContainer {
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 60% 40%;
   width: var(--page-width);
-  background-color: blue;
+  /*background-color: blue;*/
+  background-color: #f0f1ea;
+  padding: 8px;
 }
 
 .container {
@@ -15,12 +17,29 @@
   /*background-color: var(--backgroung-color-rgba);*/
   /*border: 1px var(--backgroung-color-rgba) solid;*/
   padding: 10px;
-  background-color: red;
+  /*background-color: red;*/
   align-content: end;
-  text-align: end;
+  text-align: center;
+  width: 420px;
+  margin: auto;
+  font-size: 16px;
+  color: #454544;
 }
 
 .name {
-  background-color: green;
   align-content: center;
+  font-size: 18px;
+  font-weight: 590;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.cursor:hover {
+  color: rebeccapurple;
+}
+
+.souka {
+  margin-left: 46px;
 }

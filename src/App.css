@@ -1,6 +1,6 @@
 .container {
   width: var(--page-width);
-  background-color: chocolate;
+  /*background-color: chocolate;*/
   margin: 0 auto;
 }
 

@@ -1,0 +1,39 @@
+.aboutMeImage {
+  width: 400px;
+  align-items: center;
+  margin: auto;
+  border-radius: 26px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  margin-top: 40px;
+  /*text-align: center;*/
+}
+
+.imageContainer {
+  margin: auto;
+}
+
+.paragraphContainer {
+  margin: 60px 0;
+  align-items: center;
+
+  /*background-color: yellow;*/
+}
+
+.h1 {
+  padding: 30px 0;
+  font-size: 90px;
+  font-weight: 550;
+}
+
+.paragraph {
+  line-height: 26px;
+  font-size: 16px;
+  color: #737373;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: auto auto;
+}
