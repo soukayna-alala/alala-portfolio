@@ -1,50 +1,37 @@
 import styles from "./Projects.module.css";
+import { projectList } from "./contants.ts";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 export function Projects() {
-  const { content, title, container, img, projectContainer } = styles;
+  const {
+    h4,
+    paragraph,
+    main,
+    content,
+    title,
+    container,
+    img,
+    projectContainer,
+  } = styles;
   return (
-    <main className="main">
+    <main className={main}>
       <div className={title}>My Project</div>
       <div className={container}>
-        <div className={projectContainer}>
-          <div>
-            <img
-              className={img}
-              src="calculator.jpeg"
-              alt="Calculator screenShot"
-            />
+        {projectList.map((i) => (
+          <div className={projectContainer} key={i.heading}>
+            <div>
+              <img className={img} src={i.imgSrc} alt={i.imgAlt} />
+            </div>
+            <div className={content}>
+              <h4 className={h4}>{i.heading}</h4>
+              <p className={paragraph}>{i.description}</p>
+              <a href={i.gitHubLink}>
+                Github <FontAwesomeIcon icon={faArrowRight} />
+              </a>
+            </div>
           </div>
-          <div className={content}>
-            <h4>Calculator</h4>
-            <p>hhh</p>
-          </div>
-        </div>
-        <div className={projectContainer}>
-          <div className={content}>
-            <h4>Weather App</h4>
-            <p>hhh</p>
-          </div>
-          <div>
-            <img
-              className={img}
-              src="weather.jpeg"
-              alt="Weather app screenShot"
-            />
-          </div>
-        </div>
-        <div className={projectContainer}>
-          <div>
-            <img
-              className={img}
-              src="tic-tac-toe.jpeg"
-              alt="Tic Tac Toe screenShot"
-            />
-          </div>
-          <div className={content}>
-            <h4>Tic-Tac-Toe</h4>
-            <p>hhh</p>
-          </div>
-        </div>
+        ))}
       </div>
     </main>
   );

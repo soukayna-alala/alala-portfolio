@@ -13,8 +13,9 @@ function App() {
           <Header />
         </div>
         <AboutMe />
-        <Projects />
         <Skills />
+        <Projects />
+
         {/*<Footer />*/}
       </div>
     </>

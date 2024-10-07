@@ -1,17 +1,23 @@
+.main {
+  background-color: #f5f3f0;
+}
+
 .img {
   width: 200px;
   margin: 0 20px;
   border: 1px solid #ccc;
   border-radius: 12px;
+  align-content: center;
+  align-items: center;
 }
 
 .container {
   display: grid;
-  grid-template-columns: auto;
+  grid-template-columns: auto auto;
   align-content: center;
   align-items: center;
   margin: 0 auto;
-  background-color: red;
+  /*background-color: red;*/
   justify-items: center;
   /*text-align: center;*/
 }
@@ -19,17 +25,38 @@
 .projectContainer {
   display: grid;
   grid-template-columns: auto auto;
-  background-color: #232121;
   padding: 20px;
-  margin: 40px auto;
+  margin: 20px auto;
   border-radius: 14px;
+  width: 70%;
+  height: 190px;
+  /*background-color: #3f3f3f;*/
+  border: 1px solid #dfdfdf;
+  box-shadow: 2px 4px 10px #c7c6c6;
+  background-color: #dfdfdf;
 }
 
 .title {
   text-align: center;
-  font-size: 18px;
+  font-size: 30px;
+  font-weight: 580;
+  color: #4d4c4c;
+  padding: 30px 0 50px 0;
+}
+.h4 {
+  color: #4d4c4c;
+  font-size: 24px;
 }
 
 .content {
-  color: #b6b6b6;
+  display: block;
+  overflow: auto;
+  line-height: 26px;
+}
+
+.paragraph {
+  align-content: center;
+  align-items: center;
+  margin: auto;
+  color: #737373;
 }
