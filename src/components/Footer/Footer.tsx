@@ -6,9 +6,10 @@ const git = "https://github.com/soukayna-alala";
 const phone = "+447496322120";
 
 export function Footer() {
-  const { footer, container } = styles;
+  const { footer, container, contacts } = styles;
   return (
     <footer className={footer}>
+      <h4 className={contacts}>Contacts</h4>
       <div className={container}>
         <a href={linkedin}>Linkedin</a>
         <a href={git}>Git</a>

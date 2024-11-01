@@ -13,6 +13,7 @@ export function Projects() {
     container,
     img,
     projectContainer,
+    github,
   } = styles;
   return (
     <main className={main}>
@@ -26,7 +27,7 @@ export function Projects() {
             <div className={content}>
               <h4 className={h4}>{i.heading}</h4>
               <p className={paragraph}>{i.description}</p>
-              <a href={i.gitHubLink}>
+              <a className={github} href={i.gitHubLink}>
                 Github <FontAwesomeIcon icon={faArrowRight} />
               </a>
             </div>

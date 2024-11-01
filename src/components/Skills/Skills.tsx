@@ -7,11 +7,12 @@ import {
   faHtml5,
   faGit,
 } from "@fortawesome/free-brands-svg-icons";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 // import { faJavaScript } from "@fortawesome/free-solid-svg-icons";
 
 export function Skills() {
   const {
-    button,
+    resumHyperlink,
     container,
     title,
     myImg,
@@ -22,6 +23,9 @@ export function Skills() {
     icons,
     skill,
     span,
+    resumeArrow,
+    myResum,
+    resumContainer,
   } = styles;
 
   return (
@@ -39,6 +43,14 @@ export function Skills() {
           <div className={skill}>
             <FontAwesomeIcon className={icons} icon={faReact} />
             <span className={span}>React</span>
+          </div>
+          <div className={skill}>
+            <FontAwesomeIcon className={icons} icon={faJs} />
+            <span className={span}>JavaScript</span>
+          </div>
+          <div className={skill}>
+            <FontAwesomeIcon className={icons} icon={faJs} />
+            <span className={span}>JavaScript</span>
           </div>
           <div className={skill}>
             <FontAwesomeIcon className={icons} icon={faJs} />
@@ -65,7 +77,12 @@ export function Skills() {
             <span className={span}>GIt</span>
           </div>
         </div>
-        <button className={button}>My resume</button>
+        <div className={resumContainer}>
+          <a className={resumHyperlink}>
+            <span className={myResum}>My resume</span>
+            <FontAwesomeIcon className={resumeArrow} icon={faArrowRight} />
+          </a>
+        </div>
       </div>
     </div>
   );

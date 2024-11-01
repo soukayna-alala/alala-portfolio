@@ -3,6 +3,8 @@
   align-items: center;
   margin: 60px auto;
   border-radius: 26px;
+  border: 1px solid #c5c3c3;
+  box-shadow: 2px 2px 4px #c5c3c3;
 }
 
 .container {
@@ -19,6 +21,9 @@
 .paragraphContainer {
   margin: 60px auto;
   align-items: center;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 30% 70%;
 
   /*background-color: yellow;*/
 }
@@ -28,13 +33,16 @@
   font-size: 90px;
   font-weight: 550;
   margin-top: 40px;
+  display: block;
+  height: fit-content;
 }
 
 .paragraph {
   line-height: 26px;
-  font-size: 16px;
+  font-size: 18px;
   color: #737373;
-  margin: 0 auto;
+  /*margin: 0 auto;*/
   display: grid;
   grid-template-columns: auto auto;
+  width: 830px;
 }
