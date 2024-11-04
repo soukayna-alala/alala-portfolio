@@ -29,7 +29,7 @@ export function Skills() {
   } = styles;
 
   return (
-    <div className={mainContainer}>
+    <div className={mainContainer} id="skills">
       <div className={imgContainer}>
         <img
           className={myImg}

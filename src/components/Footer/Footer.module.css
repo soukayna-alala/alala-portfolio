@@ -2,29 +2,40 @@
   width: var(--page-width);
   margin: 20px auto;
 }
-.myName {
-  color: var(--text-color);
-  font-size: 16px;
-  opacity: 0.8;
-  text-align: center;
-  padding-right: 12px;
+.main {
+  display: grid;
+  grid-template-columns: 40% auto;
+  margin: auto;
+  align-content: center;
+  align-items: center;
 }
+/*.myName {*/
+/*  !*color: var(--text-color);*!*/
+/*  font-size: 16px;*/
+/*  opacity: 0.8;*/
+/*  text-align: center;*/
+/*  padding-right: 12px;*/
+/*  color: darkblue;*/
+/*}*/
 
 .container {
   display: grid;
   width: 600px;
-  grid-template-columns: auto auto auto auto;
-  margin: 0 auto;
+  grid-template-columns: auto;
   background-color: #f5f3f0;
   color: #454544;
   font-size: 20px;
   padding-bottom: 80px;
+  align-content: center;
+  align-items: center;
+  margin: auto;
+  justify-content: center;
 }
 a {
   color: #454544;
   text-decoration: none;
-  align-items: center;
-  text-align: center;
+  /*align-items: center;*/
+  /*text-align: center;*/
   opacity: 0.7;
   font-weight: lighter;
 }

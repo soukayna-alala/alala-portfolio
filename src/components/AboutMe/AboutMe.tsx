@@ -12,7 +12,7 @@ export function AboutMe() {
   } = styles;
 
   return (
-    <div className={container}>
+    <div className={container} id="aboutMe">
       <div className={paragraphContainer}>
         <div className={h1}>
           <Typewriter

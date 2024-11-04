@@ -5,6 +5,7 @@
 
 .img {
   width: 200px;
+  height: 190px;
   margin: 0 20px;
   border: 1px solid #ccc;
   border-radius: 12px;
@@ -14,7 +15,7 @@
 
 .container {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 50% 50%;
   align-content: center;
   align-items: center;
   margin: 0 auto 100px auto;

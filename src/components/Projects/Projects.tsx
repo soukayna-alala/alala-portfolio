@@ -16,8 +16,8 @@ export function Projects() {
     github,
   } = styles;
   return (
-    <main className={main}>
-      <div className={title}>My Project</div>
+    <main className={main} id="projects">
+      <div className={title}>My Projects</div>
       <div className={container}>
         {projectList.map((i) => (
           <div className={projectContainer} key={i.heading}>
