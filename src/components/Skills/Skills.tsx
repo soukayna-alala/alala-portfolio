@@ -12,7 +12,7 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 export function Skills() {
   const {
-    resumHyperlink,
+    resumeHyperlink,
     container,
     title,
     myImg,
@@ -24,8 +24,8 @@ export function Skills() {
     skill,
     span,
     resumeArrow,
-    myResum,
-    resumContainer,
+    myResume,
+    resumeContainer,
   } = styles;
 
   return (
@@ -77,9 +77,9 @@ export function Skills() {
             <span className={span}>GIt</span>
           </div>
         </div>
-        <div className={resumContainer}>
-          <a className={resumHyperlink}>
-            <span className={myResum}>My resume</span>
+        <div className={resumeContainer}>
+          <a className={resumeHyperlink}>
+            <span className={myResume}>My resume</span>
             <FontAwesomeIcon className={resumeArrow} icon={faArrowRight} />
           </a>
         </div>

@@ -17,10 +17,8 @@ function App() {
         <hr />
         <Skills />
         <hr />
-
         <Projects />
         <hr />
-
         <Footer />
       </div>
     </>

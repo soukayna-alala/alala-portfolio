@@ -1,39 +1,40 @@
+.mainContainer {
+  display: grid;
+  grid-template-columns: 36% auto;
+  margin: 80px 0;
+  background-color: #f5f3f0;
+}
+
 .myImg {
-  width: 400px;
+  width: 100%;
   border-radius: 26px;
   border: 1px solid #181818;
   box-shadow: 2px 2px 4px #565555;
   /*margin: 60px auto;*/
 }
 
-.mainContainer {
-  display: grid;
-  grid-template-columns: 40% auto;
-  background-color: #f5f3f0;
-}
-
 .skills {
   display: grid;
-  grid-template-columns: 34% auto;
+  grid-template-columns: 50% 50%;
   /*background-color: green;*/
   font-size: 18px;
   color: #454544;
-  gap: 30px 0;
+  /*margin: auto 0;*/
 }
 
 .imgContainer {
-  align-items: center;
-  margin: 60px 40px;
+  align-items: start;
+  /*margin: 0 40px;*/
+  width: 100%;
 }
 
 .container {
-  margin: 60px 40px;
   display: grid;
   grid-auto-columns: auto;
   grid-auto-rows: 16% 68% 16%;
 }
 
-.resumHyperlink {
+.resumeHyperlink {
   width: fit-content;
   height: fit-content;
   border: 1px solid #000;
@@ -49,14 +50,17 @@
   align-self: end;
 }
 
-.resumHyperlink:hover {
+.resumeHyperlink:hover {
   opacity: 0.6;
   box-shadow: 2px 4px 8px #171616;
 }
 
 .title {
-  font-size: 26px;
-  font-weight: 560;
+  font-size: 50px;
+  font-weight: 550;
+  /*margin-bottom: 10px;*/
+  display: block;
+  height: fit-content;
 }
 
 .tsIcon {
@@ -66,31 +70,37 @@
 .icons {
   font-size: 46px;
   color: #000;
+  text-align: center;
 }
 
 .span {
   margin: auto 30px;
-  text-align: center;
-  justify-content: end;
 }
-
-.skill {
-  /*background-color: red;*/
-  display: flex;
-  justify-content: start;
-}
+/*.skill {*/
+/*  !*background-color: red;*!*/
+/*}*/
 
 .resumeArrow {
   padding: 0 2px 0 14px;
   color: #f5f3f0;
 }
 
-.myResum {
+.myResume {
   color: #f5f3f0;
   font-size: 18px;
 }
 
-.resumContainer {
+.resumeContainer {
   align-self: end;
   margin-bottom: 16px;
+}
+
+.title,
+.resumeHyperlink {
+  margin-left: 50px;
+}
+
+.skill {
+  font-size: 26px;
+  margin: auto 50px;
 }

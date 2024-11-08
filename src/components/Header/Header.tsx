@@ -2,16 +2,16 @@ import styles from "./Header.module.css";
 import { Link } from "react-scroll";
 
 export function Header() {
-  const { souka, cursor, name, container, mainContainer } = styles;
+  const { cursor, name, container, mainContainer } = styles;
 
   return (
     <header className={mainContainer}>
-      <div className={name}>
-        <p> Alala</p>
-        <p className={souka}>Soukayna</p>
-      </div>
+      <p className={name}>
+        SOUKAYNA
+        <br /> ALALA
+      </p>
 
-      <div className={container}>
+      <nav className={container}>
         <Link
           to="aboutMe"
           spy={true}
@@ -52,7 +52,7 @@ export function Header() {
         >
           Contacts
         </Link>
-      </div>
+      </nav>
     </header>
   );
 }

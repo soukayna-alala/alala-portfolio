@@ -1,13 +1,12 @@
 .footer {
   width: var(--page-width);
-  margin: 20px auto;
+  margin: 100px auto;
 }
 .main {
   display: grid;
   grid-template-columns: 40% auto;
-  margin: auto;
-  align-content: center;
-  align-items: center;
+  margin: 0 auto;
+  justify-items: center;
 }
 /*.myName {*/
 /*  !*color: var(--text-color);*!*/
@@ -20,24 +19,26 @@
 
 .container {
   display: grid;
-  width: 600px;
+  width: 100%;
   grid-template-columns: auto;
   background-color: #f5f3f0;
   color: #454544;
   font-size: 20px;
   padding-bottom: 80px;
-  align-content: center;
-  align-items: center;
-  margin: auto;
-  justify-content: center;
+  align-content: start;
+  align-items: start;
+  /*margin: auto;*/
+  justify-content: start;
+  gap: 30px;
 }
+
 a {
   color: #454544;
   text-decoration: none;
   /*align-items: center;*/
   /*text-align: center;*/
   opacity: 0.7;
-  font-weight: lighter;
+  font-size: 30px;
 }
 
 a:hover {
@@ -45,13 +46,33 @@ a:hover {
   opacity: 1;
 }
 
-.contacts {
-  align-items: center;
-  align-content: center;
-  margin: 60px auto 90px auto;
-  text-align: center;
-  font-size: 22px;
-  font-weight: lighter;
-  opacity: 0.9;
-  color: #000;
+.contactMe {
+  font-size: 50px;
+  font-weight: 550;
+  margin-bottom: 10px;
+  display: block;
+  height: fit-content;
+
+  /*align-items: center;*/
+  /*align-content: center;*/
+  /*!*margin: 60px auto 90px auto;*!*/
+  /*text-align: center;*/
+  /*font-size: 22px;*/
+  /*font-weight: lighter;*/
+  /*opacity: 0.9;*/
+  /*color: #000;*/
+}
+
+.contactFormContainer {
+  width: 100%;
+}
+
+.iconContainer {
+  display: flex;
+  /*gap: 20px;*/
+}
+
+.icon {
+  font-size: 28px;
+  margin-right: 20px;
 }

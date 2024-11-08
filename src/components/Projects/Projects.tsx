@@ -14,6 +14,7 @@ export function Projects() {
     img,
     projectContainer,
     github,
+    imgContainer,
   } = styles;
   return (
     <main className={main} id="projects">
@@ -21,7 +22,7 @@ export function Projects() {
       <div className={container}>
         {projectList.map((i) => (
           <div className={projectContainer} key={i.heading}>
-            <div>
+            <div className={imgContainer}>
               <img className={img} src={i.imgSrc} alt={i.imgAlt} />
             </div>
             <div className={content}>
