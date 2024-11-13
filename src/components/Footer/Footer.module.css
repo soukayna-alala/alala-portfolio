@@ -23,7 +23,7 @@
   grid-template-columns: auto;
   background-color: #f5f3f0;
   color: #454544;
-  font-size: 20px;
+  font-size: 24px;
   padding-bottom: 80px;
   align-content: start;
   align-items: start;
@@ -33,7 +33,7 @@
 }
 
 a {
-  color: #454544;
+  color: #1f1f1f;
   text-decoration: none;
   /*align-items: center;*/
   /*text-align: center;*/
@@ -75,4 +75,5 @@ a:hover {
 .icon {
   font-size: 28px;
   margin-right: 20px;
+  color: #000;
 }

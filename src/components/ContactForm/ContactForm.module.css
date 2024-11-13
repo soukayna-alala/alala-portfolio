@@ -24,7 +24,7 @@
 
 .fieldMessage {
   max-height: 200px;
-  min-height: 80px;
+  min-height: 100px;
   padding-top: 20px;
 }
 
@@ -36,10 +36,16 @@
   background-color: #fff;
   border-radius: 8px;
   box-shadow: 4px 4px 4px #dad5d5;
-  font-size: 16px;
+  font-size: 18px;
   padding-left: 16px;
 }
 
 .field {
-  min-height: 50px; /*padding: 20px 0 20px 20px;*/
+  min-height: 60px; /*padding: 20px 0 20px 20px;*/
+}
+
+.error {
+  padding: 14px 0 0 14px;
+  color: red;
+  font-size: 16px;
 }
