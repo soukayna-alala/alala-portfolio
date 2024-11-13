@@ -3,13 +3,14 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faPaperPlane, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { ContactForm } from "../ContactForm/ContactForm.tsx";
-
-const linkedin = "https://www.linkedin.com/in/soukayna-alala/";
-const email = "mailto:soukayna.creative.dev@gmail.com?Subject=Hello";
-const emailForUser = "soukayna.creative.dev@gmail.com";
-const git = "https://github.com/soukayna-alala";
-const phoneUser = "tel:+447496322120";
-const phone = "+447496322120";
+import {
+  phone,
+  phoneUser,
+  git,
+  emailForUser,
+  email,
+  linkedin,
+} from "./constants.ts";
 
 export function Footer() {
   const {

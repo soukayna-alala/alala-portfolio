@@ -8,7 +8,6 @@ import {
   faGit,
 } from "@fortawesome/free-brands-svg-icons";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-// import { faJavaScript } from "@fortawesome/free-solid-svg-icons";
 
 export function Skills() {
   const {

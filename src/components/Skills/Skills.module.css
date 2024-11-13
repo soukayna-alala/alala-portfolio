@@ -10,21 +10,17 @@
   border-radius: 26px;
   border: 1px solid #181818;
   box-shadow: 2px 2px 4px #565555;
-  /*margin: 60px auto;*/
 }
 
 .skills {
   display: grid;
   grid-template-columns: 50% 50%;
-  /*background-color: green;*/
   font-size: 18px;
   color: #454544;
-  /*margin: auto 0;*/
 }
 
 .imgContainer {
   align-items: start;
-  /*margin: 0 40px;*/
   width: 100%;
 }
 
@@ -58,7 +54,6 @@
 .title {
   font-size: 50px;
   font-weight: 550;
-  /*margin-bottom: 10px;*/
   display: block;
   height: fit-content;
 }
@@ -76,9 +71,6 @@
 .span {
   margin: auto 30px;
 }
-/*.skill {*/
-/*  !*background-color: red;*!*/
-/*}*/
 
 .resumeArrow {
   padding: 0 2px 0 14px;

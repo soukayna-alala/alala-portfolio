@@ -8,14 +8,6 @@
   margin: 0 auto;
   justify-items: center;
 }
-/*.myName {*/
-/*  !*color: var(--text-color);*!*/
-/*  font-size: 16px;*/
-/*  opacity: 0.8;*/
-/*  text-align: center;*/
-/*  padding-right: 12px;*/
-/*  color: darkblue;*/
-/*}*/
 
 .container {
   display: grid;
@@ -35,8 +27,7 @@
 a {
   color: #1f1f1f;
   text-decoration: none;
-  /*align-items: center;*/
-  /*text-align: center;*/
+
   opacity: 0.7;
   font-size: 30px;
 }
@@ -52,15 +43,6 @@ a:hover {
   margin-bottom: 10px;
   display: block;
   height: fit-content;
-
-  /*align-items: center;*/
-  /*align-content: center;*/
-  /*!*margin: 60px auto 90px auto;*!*/
-  /*text-align: center;*/
-  /*font-size: 22px;*/
-  /*font-weight: lighter;*/
-  /*opacity: 0.9;*/
-  /*color: #000;*/
 }
 
 .contactFormContainer {
@@ -69,7 +51,6 @@ a:hover {
 
 .iconContainer {
   display: flex;
-  /*gap: 20px;*/
 }
 
 .icon {

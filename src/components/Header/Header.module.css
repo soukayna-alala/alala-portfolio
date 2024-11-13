@@ -2,7 +2,6 @@
   display: grid;
   grid-template-columns: 66% 34%;
   width: var(--page-width);
-  /*background-color: blue;*/
   background-color: #f5f3f0;
   padding: 26px 0;
 }
@@ -11,9 +10,7 @@
   display: flex;
   gap: 74px;
   width: 100%;
-  /*margin: auto;*/
   font-size: 16px;
-  /*margin-left: 70px;*/
   opacity: 0.9;
   font-weight: bold;
   text-decoration: underline 2px #000;

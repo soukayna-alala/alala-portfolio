@@ -11,7 +11,9 @@ export function ContactForm() {
   const nameRef = useRef<HTMLInputElement>(null!);
   const emailRef = useRef<HTMLInputElement>(null!);
   const messageRef = useRef<HTMLTextAreaElement>(null!);
-  const isFormValid = emailError.length ? true : false;
+  const isFormValid = !!emailError.length;
+
+  //emailError.length ? true : false;
 
   function emailValidation() {
     const emailValue = emailRef.current.value;
@@ -54,10 +56,6 @@ export function ContactForm() {
 
   return (
     <>
-      {/*delete me*/}
-      <div>emailError = {JSON.stringify(emailError)}</div>
-      {/*delete me*/}
-
       <section className={formSection}>
         <form className={form} onSubmit={onSubmit}>
           <div>

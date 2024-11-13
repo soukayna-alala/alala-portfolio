@@ -1,5 +1,5 @@
 import styles from "./Projects.module.css";
-import { projectList } from "./contants.ts";
+import { projectList } from "./constants.ts";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
