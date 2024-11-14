@@ -1,33 +1,56 @@
 .mainContainer {
-  display: grid;
-  grid-template-columns: 66% 34%;
-  width: var(--page-width);
+  justify-content: space-between;
   background-color: #f5f3f0;
   padding: 26px 0;
+
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
 }
 
 .container {
-  display: flex;
-  gap: 74px;
   width: 100%;
   font-size: 16px;
-  opacity: 0.9;
   font-weight: bold;
   text-decoration: underline 2px #000;
   text-underline-offset: 10px;
+  display: grid;
+  grid-template-columns: auto;
+
+  @media (min-width: 320px) {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 8px;
+  }
+
+  @media (min-width: 768px) {
+    gap: 74px;
+  }
 }
 
 .name {
   align-content: center;
   font-size: 18px;
   font-weight: 600;
+  margin-bottom: 20px;
+  display: inline-flex;
+
+  @media (min-width: 768px) {
+    margin-bottom: 0;
+  }
 }
 
-.cursor {
+.link {
   cursor: pointer;
   color: #000000;
+  padding-bottom: 20px;
+
+  @media (min-width: 320px) {
+    padding-bottom: 0;
+  }
 }
 
-.cursor:hover {
+.link:hover {
   color: rebeccapurple;
 }

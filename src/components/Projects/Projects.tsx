@@ -14,27 +14,26 @@ export function Projects() {
     img,
     projectContainer,
     github,
-    imgContainer,
+    arrowRight,
   } = styles;
   return (
-    <main className={main} id="projects">
+    <section className={main}>
       <div className={title}>My Projects</div>
       <div className={container}>
         {projectList.map((i) => (
           <div className={projectContainer} key={i.heading}>
-            <div className={imgContainer}>
-              <img className={img} src={i.imgSrc} alt={i.imgAlt} />
-            </div>
+            <img className={img} src={i.imgSrc} alt={i.imgAlt} />
             <div className={content}>
               <h4 className={h4}>{i.heading}</h4>
               <p className={paragraph}>{i.description}</p>
               <a className={github} href={i.gitHubLink}>
-                Github <FontAwesomeIcon icon={faArrowRight} />
+                Github
+                <FontAwesomeIcon className={arrowRight} icon={faArrowRight} />
               </a>
             </div>
           </div>
         ))}
       </div>
-    </main>
+    </section>
   );
 }

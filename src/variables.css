@@ -4,9 +4,8 @@
   --primary-color: #db00d8;
 
   /* sizing */
-  --page-width: 1400px;
-  --tablet-break-point: 768px;
-  --desktop-break-point: 1024px;
+  --tablet-container-width: 768px;
+  --desktop-containe-width: 1024px;
 
   /* fonts */
   --main-font-size: 14px;

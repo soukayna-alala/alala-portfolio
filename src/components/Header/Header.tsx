@@ -2,14 +2,14 @@ import styles from "./Header.module.css";
 import { Link } from "react-scroll";
 
 export function Header() {
-  const { cursor, name, container, mainContainer } = styles;
+  const { link, name, container, mainContainer } = styles;
 
   return (
     <header className={mainContainer}>
-      <p className={name}>
+      <span className={name}>
         SOUKAYNA
         <br /> ALALA
-      </p>
+      </span>
 
       <nav className={container}>
         <Link
@@ -18,7 +18,7 @@ export function Header() {
           smooth={true}
           offset={50}
           duration={500}
-          className={cursor}
+          className={link}
         >
           About Me
         </Link>
@@ -28,7 +28,7 @@ export function Header() {
           smooth={true}
           offset={-100}
           duration={500}
-          className={cursor}
+          className={link}
         >
           Skills
         </Link>
@@ -38,7 +38,7 @@ export function Header() {
           smooth={true}
           offset={-100}
           duration={500}
-          className={cursor}
+          className={link}
         >
           Projects
         </Link>
@@ -48,7 +48,7 @@ export function Header() {
           smooth={true}
           offset={-100}
           duration={500}
-          className={cursor}
+          className={link}
         >
           Contacts
         </Link>
