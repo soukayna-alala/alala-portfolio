@@ -1,0 +1,7 @@
+.mobileNav {
+  background-color: red;
+
+  @media (min-width: 600px) {
+    display: none;
+  }
+}

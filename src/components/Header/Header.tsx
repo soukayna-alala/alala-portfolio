@@ -1,5 +1,6 @@
 import styles from "./Header.module.css";
 import { Link } from "react-scroll";
+import { MobileNav } from "./MobileNav/MobileNav.tsx";
 
 export function Header() {
   const { link, name, container, mainContainer } = styles;
@@ -53,6 +54,7 @@ export function Header() {
           Contacts
         </Link>
       </nav>
+      <MobileNav />
     </header>
   );
 }

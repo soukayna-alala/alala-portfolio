@@ -1,39 +1,51 @@
-.aboutMeImage {
-  width: 100%;
-  align-items: center;
-  margin: 60px auto;
-  border-radius: 26px;
-  border: 1px solid #c5c3c3;
-}
-
 .container {
   display: grid;
-  grid-template-columns: 66% 34%;
-  background-color: #f5f3f0;
-}
-
-.paragraphContainer {
-  margin: 60px 0;
-  align-items: center;
-  display: grid;
   grid-template-columns: auto;
-  grid-template-rows: 30% 70%;
+  background-color: #f5f3f0;
+  gap: 20px;
+  margin-bottom: 20px;
+
+  @media (min-width: 1024px) {
+    grid-template-columns: auto auto;
+  }
 }
 
 .h1 {
-  padding: 30px 0;
-  font-size: 90px;
+  padding: 0;
+  font-size: 32px;
   font-weight: 550;
-  margin-top: 40px;
   display: block;
   height: fit-content;
+
+  @media (min-width: 320px) {
+    margin: 20px 0;
+  }
+
+  @media (min-width: 768px) {
+    font-size: 50px;
+  }
+
+  @media (min-width: 1024px) {
+    font-size: 70px;
+  }
 }
 
 .paragraph {
-  line-height: 26px;
   font-size: 18px;
   color: #737373;
-  display: grid;
-  grid-template-columns: auto auto;
-  width: 830px;
+  margin-bottom: 20px;
+}
+
+.aboutMeImage {
+  display: block;
+  align-items: center;
+  align-content: center;
+  margin: auto;
+  border-radius: 26px;
+  border: 1px solid #c5c3c3;
+  max-width: 80%;
+
+  @media (min-width: 1024px) {
+    max-width: 250px;
+  }
 }

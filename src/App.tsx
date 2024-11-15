@@ -8,11 +8,11 @@ function App() {
   return (
     <>
       <Header />
-      <AboutMe />
-      {/*<hr />*/}
+      {/*<AboutMe />*/}
+      <hr />
       {/*<Skills />*/}
       {/*<hr />*/}
-      <Projects />
+      {/*<Projects />*/}
       {/*<hr />*/}
       {/*<Footer />*/}
     </>

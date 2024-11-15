@@ -15,16 +15,13 @@
   font-weight: bold;
   text-decoration: underline 2px #000;
   text-underline-offset: 10px;
-  display: grid;
   grid-template-columns: auto;
+  display: none;
+  background: blueviolet;
 
-  @media (min-width: 320px) {
+  @media (min-width: 600px) {
     display: grid;
     grid-template-columns: auto auto auto auto;
-    gap: 8px;
-  }
-
-  @media (min-width: 768px) {
     gap: 74px;
   }
 }
