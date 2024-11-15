@@ -1,7 +1,19 @@
 .mobileNav {
-  background-color: red;
+  background: yellow;
 
   @media (min-width: 600px) {
     display: none;
   }
 }
+
+.bars {
+  font-size: 26px;
+  @media (min-width: 600px) {
+    display: none;
+  }
+}
+
+/*.navBar {*/
+/*  display: flex;*/
+/*  flex-direction: column;*/
+/*}*/

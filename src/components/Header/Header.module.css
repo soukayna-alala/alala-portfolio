@@ -1,29 +1,13 @@
-.mainContainer {
+.header {
   justify-content: space-between;
   background-color: #f5f3f0;
   padding: 26px 0;
+  display: grid;
 
-  @media (min-width: 768px) {
-    display: grid;
-    grid-template-columns: auto auto;
-  }
-}
-
-.container {
-  width: 100%;
-  font-size: 16px;
-  font-weight: bold;
-  text-decoration: underline 2px #000;
-  text-underline-offset: 10px;
-  grid-template-columns: auto;
-  display: none;
-  background: blueviolet;
-
-  @media (min-width: 600px) {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    gap: 74px;
-  }
+  grid-template-columns: auto auto;
+  /*@media (min-width: 768px) {*/
+  /*  grid-template-columns: auto auto;*/
+  /*}*/
 }
 
 .name {
@@ -38,16 +22,11 @@
   }
 }
 
-.link {
-  cursor: pointer;
-  color: #000000;
-  padding-bottom: 20px;
+.bigScreenNav {
+  background: black;
+  display: none;
 
-  @media (min-width: 320px) {
-    padding-bottom: 0;
+  @media (min-width: 600px) {
+    display: block;
   }
-}
-
-.link:hover {
-  color: rebeccapurple;
 }
