@@ -1,19 +1,34 @@
 import styles from "./MobileNav.module.css";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Links } from "../Links/Links.tsx";
+import { useState } from "react";
 
 export function MobileNav() {
-  const { mobileNav, bars, navBar } = styles;
+  const { mobileNav, menuBar, XBar } = styles;
+  const [displayNav, setDisplayNav] = useState(false);
 
   return (
-    <nav className={mobileNav}>
-      <div>
-        <FontAwesomeIcon className={bars} icon={faBars} />
-        <nav className={navBar}>
+    <>
+      {!displayNav ? (
+        <FontAwesomeIcon
+          className={menuBar}
+          icon={faBars}
+          onClick={() => setDisplayNav(true)}
+        />
+      ) : null}
+
+      {displayNav ? (
+        <nav className={mobileNav}>
+          <FontAwesomeIcon
+            className={XBar}
+            icon={faXmark}
+            onClick={() => setDisplayNav(false)}
+          />
+
           <Links />
         </nav>
-      </div>
-    </nav>
+      ) : null}
+    </>
   );
 }

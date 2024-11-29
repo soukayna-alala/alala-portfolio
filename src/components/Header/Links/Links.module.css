@@ -1,18 +1,24 @@
 .container {
   width: 100%;
-  font-size: 16px;
   font-weight: bold;
+  font-size: 18px;
+
   text-decoration: underline 2px #000;
-  text-underline-offset: 10px;
-  grid-template-columns: auto;
-  background: blueviolet;
+  line-height: 36px;
+  /*text-underline-offset: 10px;*/
   display: flex;
   flex-direction: column;
+  padding: 0 20px;
 
   @media (min-width: 600px) {
+    /*delete me when finished*/
+    background: red;
+    /*delete me when finished*/
     display: grid;
     grid-template-columns: auto auto auto auto;
     gap: 64px;
+    font-size: 16px;
+    padding: 0;
   }
 }
 
