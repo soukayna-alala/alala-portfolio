@@ -12,7 +12,6 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 export function Skills() {
   const {
     resumeHyperlink,
-    container,
     title,
     myImg,
     mainContainer,
@@ -24,36 +23,38 @@ export function Skills() {
     span,
     resumeArrow,
     myResume,
-    resumeContainer,
   } = styles;
 
   return (
-    <div className={mainContainer} id="skills">
-      <div className={imgContainer}>
-        <img
-          className={myImg}
-          src="skillsImg.jpg"
-          alt="Soukayna alala picture"
-        />
-      </div>
-      <div className={container}>
-        <div className={title}>My Skills</div>
+    <>
+      <div className={title}>My Skills</div>
+
+      <div className={mainContainer} id="skills">
+        <div className={imgContainer}>
+          <img
+            className={myImg}
+            src="skillsImg.jpg"
+            alt="Soukayna alala picture"
+          />
+        </div>
+
         <div className={skills}>
           <div className={skill}>
             <FontAwesomeIcon className={icons} icon={faReact} />
             <span className={span}>React</span>
           </div>
+
           <div className={skill}>
             <FontAwesomeIcon className={icons} icon={faJs} />
             <span className={span}>JavaScript</span>
           </div>
           <div className={skill}>
             <FontAwesomeIcon className={icons} icon={faJs} />
-            <span className={span}>JavaScript</span>
+            <span className={span}>API</span>
           </div>
           <div className={skill}>
             <FontAwesomeIcon className={icons} icon={faJs} />
-            <span className={span}>JavaScript</span>
+            <span className={span}>Vite</span>
           </div>
           <div className={skill}>
             <img
@@ -76,13 +77,11 @@ export function Skills() {
             <span className={span}>GIt</span>
           </div>
         </div>
-        <div className={resumeContainer}>
-          <a className={resumeHyperlink}>
-            <span className={myResume}>My resume</span>
-            <FontAwesomeIcon className={resumeArrow} icon={faArrowRight} />
-          </a>
-        </div>
+        <a className={resumeHyperlink}>
+          <span className={myResume}>My resume</span>
+          <FontAwesomeIcon className={resumeArrow} icon={faArrowRight} />
+        </a>
       </div>
-    </div>
+    </>
   );
 }
