@@ -3,62 +3,57 @@
 }
 
 .main {
-  display: grid;
-  grid-template-columns: auto;
+  display: flex;
+  /*grid-template-columns: auto auto;*/
   margin: 0 auto;
   justify-items: center;
+  gap: 20px;
 
   @media (min-width: 600px) {
-    grid-template-columns: 40% auto;
+    grid-template-columns: auto auto;
   }
 }
 
 .container {
-  display: grid;
-  width: 100%;
-  grid-template-columns: auto;
-  background-color: #f5f3f0;
   color: #454544;
-  font-size: 24px;
+  font-size: 20px;
   padding-bottom: 80px;
-  align-content: start;
-  align-items: start;
   /*margin: auto;*/
-  justify-content: start;
-  gap: 30px;
+  gap: 20px;
+  background: purple;
+}
 
-  a {
-    color: #1f1f1f;
-    text-decoration: none;
+.link {
+  color: #1f1f1f;
+  text-decoration: none;
+  display: block;
+  opacity: 0.7;
+  font-size: 30px;
+}
 
-    opacity: 0.7;
-    font-size: 30px;
-  }
+.link:hover {
+  color: #db00d8;
+  opacity: 1;
+}
 
-  a:hover {
-    color: #db00d8;
-    opacity: 1;
-  }
+.contactMe {
+  font-size: 50px;
+  font-weight: 550;
+  margin-bottom: 10px;
+  display: block;
+  height: fit-content;
+}
 
-  .contactMe {
-    font-size: 50px;
-    font-weight: 550;
-    margin-bottom: 10px;
-    display: block;
-    height: fit-content;
-  }
+.formContainer {
+  flex-grow: 1;
+}
 
-  .contactFormContainer {
-    width: 100%;
-  }
+.iconContainer {
+  display: flex;
+}
 
-  .iconContainer {
-    display: flex;
-  }
-
-  .icon {
-    font-size: 28px;
-    margin-right: 20px;
-    color: #000;
-  }
+.icon {
+  font-size: 28px;
+  margin-right: 20px;
+  color: #000;
 }

@@ -2,7 +2,6 @@ import styles from "./Footer.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faPaperPlane, faPhone } from "@fortawesome/free-solid-svg-icons";
-import { ContactForm } from "../ContactForm/ContactForm.tsx";
 import {
   phone,
   phoneUser,
@@ -11,6 +10,7 @@ import {
   email,
   linkedin,
 } from "./constants.ts";
+import { ContactForm } from "../ContactForm/ContactForm.tsx";
 
 export function Footer() {
   const {
@@ -18,21 +18,23 @@ export function Footer() {
     container,
     contactMe,
     main,
-    contactFormContainer,
+    formContainer,
     iconContainer,
     icon,
+    link,
   } = styles;
+
   return (
     <footer className={footer} id="contacts">
-      <main className={main}>
+      <div className={main}>
         <div className={container}>
           <h4 className={contactMe}>Contact me</h4>
 
-          <a href={email}>
+          <a href={email} className={link}>
             <FontAwesomeIcon className={icon} icon={faPaperPlane} />
             {emailForUser}
           </a>
-          <a href={phoneUser}>
+          <a href={phoneUser} className={link}>
             <FontAwesomeIcon className={icon} icon={faPhone} />
             {phone}
           </a>
@@ -45,10 +47,10 @@ export function Footer() {
             </a>
           </div>
         </div>
-        <div className={contactFormContainer}>
+        <div className={formContainer}>
           <ContactForm />
         </div>
-      </main>
+      </div>
     </footer>
   );
 }
