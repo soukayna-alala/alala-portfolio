@@ -8,6 +8,8 @@ body {
     serif;
   background-color: #f5f3f0;
   font-size: var(--main-font-size);
+  color: var(--main-text-color);
+  line-height: normal;
 }
 
 main {

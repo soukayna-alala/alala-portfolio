@@ -1,11 +1,11 @@
 .container {
   display: grid;
   grid-template-columns: auto;
-  margin: 0 auto 80px auto;
-  gap: 30px;
+  margin: 0 auto var(--gap-size-large) auto;
+  gap: var(--gap-size-small);
 
   @media (min-width: 1024px) {
-    grid-template-columns: 34% auto;
+    grid-template-columns: auto auto;
   }
 }
 
@@ -25,12 +25,11 @@
 }
 
 .paragraph {
-  font-size: 22px;
-  color: #737373;
-  line-height: 26px;
+  font-size: 20px;
   margin: 0 auto;
-  @media (min-width: 1024px) {
-    margin: 0;
+
+  @media (min-width: 768px) {
+    font-size: 22px;
   }
 }
 
@@ -40,9 +39,55 @@
   border: 1px solid #c5c3c3;
   margin: 0 auto;
   width: 70%;
+  grid-row: 1 / span 2;
+
+  @media (min-width: 600px) {
+    max-width: 330px;
+  }
+
+  @media (min-width: 768px) {
+    max-width: 400px;
+  }
 
   @media (min-width: 1024px) {
+    border: unset;
     margin: 0;
     width: 100%;
   }
+}
+
+.paragraphGap {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  @media (min-width: 1280px) {
+    gap: 30px;
+  }
+}
+
+.resumeHyperlink {
+  width: fit-content;
+  height: fit-content;
+  border: 1px solid #000;
+  padding: 10px 12px;
+  border-radius: 18px;
+  background-color: #000;
+  cursor: pointer;
+  opacity: 0.9;
+  margin: 0 auto;
+
+  @media (min-width: 600px) {
+    margin: 0;
+  }
+}
+
+.resumeArrow {
+  padding: 0 2px 0 14px;
+  color: #f5f3f0;
+}
+
+.myResume {
+  color: #f5f3f0;
+  font-size: 18px;
 }

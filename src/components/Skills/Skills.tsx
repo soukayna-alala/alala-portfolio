@@ -7,11 +7,9 @@ import {
   faHtml5,
   faGit,
 } from "@fortawesome/free-brands-svg-icons";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 export function Skills() {
   const {
-    resumeHyperlink,
     title,
     myImg,
     mainContainer,
@@ -21,8 +19,8 @@ export function Skills() {
     icons,
     skill,
     span,
-    resumeArrow,
-    myResume,
+    viteIcon,
+    FigmaIcon,
   } = styles;
 
   return (
@@ -50,10 +48,10 @@ export function Skills() {
           </div>
           <div className={skill}>
             <FontAwesomeIcon className={icons} icon={faJs} />
-            <span className={span}>API</span>
+            <span className={span}>Fetch API</span>
           </div>
           <div className={skill}>
-            <FontAwesomeIcon className={icons} icon={faJs} />
+            <img className={viteIcon} src="Vitejs-logo.svg" alt="vite icon" />
             <span className={span}>Vite</span>
           </div>
           <div className={skill}>
@@ -72,15 +70,20 @@ export function Skills() {
             <FontAwesomeIcon className={icons} icon={faCss3} />
             <span className={span}>CSS</span>
           </div>
+
+          <div className={skill}>
+            <img
+              className={FigmaIcon}
+              src="cdnlogo.com_figma.svg"
+              alt="figma icon"
+            />
+            <span className={span}>Figma</span>
+          </div>
           <div className={skill}>
             <FontAwesomeIcon className={icons} icon={faGit} />
             <span className={span}>GIt</span>
           </div>
         </div>
-        <a className={resumeHyperlink}>
-          <span className={myResume}>My resume</span>
-          <FontAwesomeIcon className={resumeArrow} icon={faArrowRight} />
-        </a>
       </div>
     </>
   );

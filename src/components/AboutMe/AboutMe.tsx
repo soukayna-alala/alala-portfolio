@@ -1,12 +1,23 @@
 import { Typewriter } from "react-simple-typewriter";
 import styles from "./AboutMe.module.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 export function AboutMe() {
-  const { h1, paragraph, container, aboutMeImage } = styles;
+  const {
+    h1,
+    paragraph,
+    container,
+    aboutMeImage,
+    paragraphGap,
+    resumeHyperlink,
+    myResume,
+    resumeArrow,
+  } = styles;
 
   return (
     <>
-      <h1 className={h1}>
+      <h1 className={h1} id="aboutMe">
         <Typewriter
           words={["Front-End Developer"]}
           loop={1}
@@ -20,7 +31,7 @@ export function AboutMe() {
           src="aboutMePic.jpg"
           alt="Soukayna Alala's image "
         />
-        <div>
+        <div className={paragraphGap}>
           <p className={paragraph}>
             Hi there, my name is Soukayna. I'm 24 years old, and I live in
             London. I entered the world of coding in 2022, and I am continuously
@@ -42,6 +53,10 @@ export function AboutMe() {
             issues, and be able to work independently in a team.
           </p>
         </div>
+        <a className={resumeHyperlink}>
+          <span className={myResume}>My resume</span>
+          <FontAwesomeIcon className={resumeArrow} icon={faArrowRight} />
+        </a>
       </div>
     </>
   );

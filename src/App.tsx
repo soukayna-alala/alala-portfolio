@@ -11,9 +11,10 @@ function App() {
       <main>
         <AboutMe />
         <hr />
-        <Skills />
-        <hr />
         <Projects />
+        <hr />
+        <Skills />
+
         <hr />
       </main>
       <Footer />

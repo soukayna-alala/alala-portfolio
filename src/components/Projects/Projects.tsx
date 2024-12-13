@@ -17,7 +17,7 @@ export function Projects() {
     arrowRight,
   } = styles;
   return (
-    <section className={main}>
+    <section className={main} id="projects">
       <div className={title}>My Projects</div>
       <div className={container}>
         {projectList.map((i) => (

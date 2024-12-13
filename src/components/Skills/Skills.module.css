@@ -1,38 +1,29 @@
 .mainContainer {
-  display: grid;
-  grid-template-columns: auto;
-  background-color: #f5f3f0;
-  gap: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-size-small);
+  margin-bottom: var(--gap-size-large);
 
   @media (min-width: 1024px) {
-    grid-template-columns: 36% auto;
-    margin: 80px 0;
+    flex-direction: row;
+    margin: 0 auto;
   }
 }
 
-.imgContainer {
-  width: 100%;
-  margin-bottom: 40px;
-}
-
 .myImg {
-  width: 80%;
+  max-width: 400px;
+  border-radius: 26px;
   display: block;
   margin: 0 auto;
-  border-radius: 26px;
-  border: 1px solid #181818;
-  box-shadow: 2px 2px 4px #565555;
 
-  @media (min-width: 600px) {
-    width: 100%;
-    margin: 0;
+  @media (min-width: 1024px) {
+    max-width: 400px;
   }
 }
 
 .skills {
   display: grid;
   grid-template-columns: auto;
-  color: #454544;
   justify-content: center;
   gap: 20px;
 
@@ -46,23 +37,6 @@
   }
 }
 
-.resumeHyperlink {
-  width: fit-content;
-  height: fit-content;
-  border: 1px solid #000;
-  padding: 10px 12px;
-  border-radius: 18px;
-  background-color: #000;
-  font-size: 16px;
-  cursor: pointer;
-  opacity: 0.9;
-  margin: 0 auto;
-
-  @media (min-width: 600px) {
-    margin: 0;
-  }
-}
-
 .resumeHyperlink:hover {
   opacity: 0.6;
   box-shadow: 2px 4px 8px #171616;
@@ -72,14 +46,8 @@
   width: 100%;
   font-size: 50px;
   font-weight: 550;
-  margin: 50px 0;
-  display: block;
   text-align: center;
-
-  @media (min-width: 600px) {
-    margin: 30px 0;
-    text-align: left;
-  }
+  margin: var(--gap-size-large) auto;
 }
 
 .tsIcon {
@@ -89,7 +57,6 @@
 
 .icons {
   font-size: 46px;
-  color: #000;
   justify-self: center;
 }
 
@@ -107,12 +74,16 @@
   }
 }
 
-.resumeArrow {
-  padding: 0 2px 0 14px;
-  color: #f5f3f0;
+.viteIcon {
+  width: 46px;
+  justify-self: center;
 }
 
-.myResume {
-  color: #f5f3f0;
-  font-size: 18px;
+.FigmaIcon {
+  width: 30px;
+}
+
+.imgContainer {
+  max-width: 400px;
+  margin: 0 auto;
 }
