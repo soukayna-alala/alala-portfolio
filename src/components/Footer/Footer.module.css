@@ -1,13 +1,14 @@
 .footer {
   margin: 100px auto;
+  padding: var(--gap-size-small);
+  max-width: var(--max-page-width);
 }
 
 .main {
   display: flex;
-  /*grid-template-columns: auto auto;*/
   margin: 0 auto;
   justify-items: center;
-  gap: 20px;
+  gap: var(--gap-size-small);
 
   @media (min-width: 600px) {
     grid-template-columns: auto auto;
@@ -17,10 +18,7 @@
 .container {
   color: #454544;
   font-size: 20px;
-  padding-bottom: 80px;
-  /*margin: auto;*/
   gap: 20px;
-  background: purple;
 }
 
 .link {

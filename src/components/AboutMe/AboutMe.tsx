@@ -6,15 +6,15 @@ export function AboutMe() {
 
   return (
     <>
+      <h1 className={h1}>
+        <Typewriter
+          words={["Front-End Developer"]}
+          loop={1}
+          typeSpeed={120}
+          delaySpeed={1200}
+        />
+      </h1>
       <div className={container}>
-        <h1 className={h1}>
-          <Typewriter
-            words={["Front-End Developer"]}
-            loop={1}
-            typeSpeed={120}
-            delaySpeed={1200}
-          />
-        </h1>
         <img
           className={aboutMeImage}
           src="aboutMePic.jpg"

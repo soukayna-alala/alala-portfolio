@@ -1,23 +1,13 @@
 .container {
-  width: 100%;
   font-weight: bold;
-  font-size: 18px;
-
-  text-decoration: underline 2px #000;
-  line-height: 36px;
-  /*text-underline-offset: 10px;*/
-  display: flex;
-  flex-direction: column;
   padding: 0 20px;
 
-  @media (min-width: 600px) {
-    /*delete me when finished*/
-    /*delete me when finished*/
+  @media (min-width: 768px) {
     display: grid;
     grid-template-columns: auto auto auto auto;
     gap: 64px;
-    font-size: 16px;
     padding: 0;
+    align-content: center;
   }
 }
 
@@ -29,8 +19,4 @@
   @media (min-width: 320px) {
     padding-bottom: 0;
   }
-}
-
-.link:hover {
-  color: rebeccapurple;
 }

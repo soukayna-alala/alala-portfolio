@@ -7,10 +7,16 @@ body {
     Times New Roman,
     serif;
   background-color: #f5f3f0;
+  font-size: var(--main-font-size);
 }
 
 main {
-  padding: 0 20px;
-  max-width: 1400px;
+  padding: 0 var(--gap-size-small);
+  max-width: var(--max-page-width);
   margin: 0 auto;
+}
+
+a:hover {
+  color: var(--primary-color);
+  text-decoration: underline;
 }

@@ -7,10 +7,7 @@ export function Header() {
 
   return (
     <header className={header}>
-      <span className={name}>
-        SOUKAYNA
-        <br /> ALALA
-      </span>
+      <span className={name}>SOUKAYNA ALALA</span>
       <div className={bigScreenNav}>
         <Links />
       </div>

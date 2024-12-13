@@ -4,11 +4,14 @@
   --primary-color: #db00d8;
 
   /* sizing */
-  --tablet-container-width: 768px;
-  --desktop-containe-width: 1024px;
+  --max-page-width: 1400px;
 
   /* fonts */
-  --main-font-size: 14px;
+  --main-font-size: 16px;
   --h1-font-size: 36px;
   --backgroung-color-rgba: rgba(94, 99, 99, 0.4);
+
+  /* spacing */
+  --gap-size-small: 30px;
+  --gap-size-large: 60px;
 }
