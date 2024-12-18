@@ -64,7 +64,7 @@ export function Skills() {
           </div>
           <div className={skill}>
             <FontAwesomeIcon className={icons} icon={faHtml5} />
-            <span className={span}>HTML</span>
+            <span className={span}>HTML5</span>
           </div>
           <div className={skill}>
             <FontAwesomeIcon className={icons} icon={faCss3} />
@@ -81,7 +81,7 @@ export function Skills() {
           </div>
           <div className={skill}>
             <FontAwesomeIcon className={icons} icon={faGit} />
-            <span className={span}>GIt</span>
+            <span className={span}>Git</span>
           </div>
         </div>
       </div>

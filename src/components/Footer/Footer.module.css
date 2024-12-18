@@ -1,5 +1,5 @@
 .footer {
-  margin: var(--gap-size-large) auto;
+  margin: var(--gap-size-large) auto 0 auto;
   padding: var(--gap-size-small);
   max-width: var(--max-page-width);
 }
@@ -30,14 +30,10 @@
   color: var(--main-text-color);
   text-decoration: none;
   display: block;
-  font-size: 16px;
+  font-size: 18px;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
-
-  @media (min-width: 400px) {
-    font-size: 20px;
-  }
 
   @media (min-width: 400px) {
     font-size: 24px;

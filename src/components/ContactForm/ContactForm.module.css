@@ -1,6 +1,6 @@
 .form {
   display: flex;
-  gap: 30px;
+  gap: var(--gap-size-small);
   flex-direction: column;
   box-sizing: border-box;
   width: 100%;
@@ -25,7 +25,8 @@
 .fieldMessage {
   max-height: 200px;
   min-height: 100px;
-  padding-top: 20px;
+  padding: 20px 20px;
+  box-sizing: border-box;
 }
 
 .fieldMessage,
@@ -39,11 +40,12 @@
 }
 
 .field {
-  min-height: 60px; /*padding: 20px 0 20px 20px;*/
+  min-height: 60px;
+  padding: 0 20px;
+  box-sizing: border-box;
 }
 
 .error {
   padding: 14px 0 0 14px;
-
   font-size: 16px;
 }

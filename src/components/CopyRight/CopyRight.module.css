@@ -1,0 +1,31 @@
+.container {
+  margin: 0 auto;
+  max-width: var(--max-page-width);
+  display: grid;
+  grid-template-columns: auto;
+  padding: var(--gap-size-large) 0;
+
+  justify-items: center;
+
+  @media (min-width: 600px) {
+    grid-template-columns: auto auto;
+    justify-items: normal;
+    padding: 0 var(--gap-size-small);
+  }
+}
+
+.madeWith {
+  text-align: center;
+
+  @media (min-width: 600px) {
+    text-align: right;
+  }
+}
+
+.text {
+  padding: 6px 0;
+
+  @media (min-width: 600px) {
+    padding: var(--gap-size-large) 0 var(--gap-size-small) 0;
+  }
+}
