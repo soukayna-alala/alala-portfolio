@@ -2,10 +2,16 @@ import { Typewriter } from "react-simple-typewriter";
 import styles from "./AboutMe.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import dayjs from "dayjs";
 
 export function AboutMe() {
+  const iso8601Dob = "2000/06/20"; // my dob in ISO 8601 format
+  const dateOfBirth = dayjs(iso8601Dob);
+  const myAgeInYears = dayjs().diff(dateOfBirth, "years");
+
   const {
     h1,
+    bold,
     paragraph,
     container,
     aboutMeImage,
@@ -33,13 +39,17 @@ export function AboutMe() {
         />
         <div className={paragraphGap}>
           <p className={paragraph}>
-            Hi there, my name is Soukayna. I'm 24 years old, and I live in
-            London. I entered the world of coding in 2022, and I am continuously
-            practicing and working hard to develop my skills.
+            Hi there, my name is Soukayna. I'm {myAgeInYears} years old, and I
+            live in London. I entered the world of coding in 2022, and I am
+            continuously practicing and working hard to develop my skills.
           </p>
           <p className={paragraph}>
             I am dedicated to building my expertise in front-end development,
-            including HTML, CSS, JavaScript, TypeScript, React, and Git.
+            including{" "}
+            <span className={bold}>
+              HTML, CSS, JavaScript, TypeScript, React, and Git
+            </span>
+            .
           </p>
           <p className={paragraph}>
             I am now eager to apply these skills to real-world projects and

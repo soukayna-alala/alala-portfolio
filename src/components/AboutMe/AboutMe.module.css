@@ -9,6 +9,10 @@
   }
 }
 
+.bold {
+  font-weight: 600;
+}
+
 .h1 {
   font-size: 40px;
   font-weight: 550;

@@ -6,12 +6,14 @@ export function Header() {
   const { name, header, bigScreenNav } = styles;
 
   return (
-    <header className={header}>
-      <span className={name}>SOUKAYNA ALALA</span>
-      <div className={bigScreenNav}>
-        <Links />
-      </div>
-      <MobileNav />
-    </header>
+    <>
+      <header className={header}>
+        <span className={name}>SOUKAYNA ALALA</span>
+        <div className={bigScreenNav}>
+          <Links />
+        </div>
+        <MobileNav />
+      </header>
+    </>
   );
 }

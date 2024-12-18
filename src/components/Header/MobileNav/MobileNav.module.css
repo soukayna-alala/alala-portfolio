@@ -1,11 +1,11 @@
 .mobileNav {
-  position: relative;
+  position: fixed;
   top: 0;
   right: 0;
   height: 100vh;
-  background: #979696;
+  background-color: rgba(151, 150, 150, 0.8);
+
   display: block;
-  margin: -26px -20px -34px 0;
   justify-items: left;
   padding: 0 var(--gap-size-small);
 
