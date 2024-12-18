@@ -6,17 +6,21 @@
 
   @media (min-width: 1024px) {
     flex-direction: row;
-    margin: 0 auto;
   }
 }
 
 .myImg {
-  max-width: 400px;
+  max-width: 260px;
   border-radius: 26px;
   display: block;
   margin: 0 auto;
 
-  @media (min-width: 1024px) {
+  @media (min-width: 480px) {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: 600px) {
     max-width: 400px;
   }
 }
@@ -25,10 +29,10 @@
   display: grid;
   grid-template-columns: auto;
   justify-content: center;
-  gap: 20px;
+  gap: 26px;
 
-  @media (min-width: 320px) {
-    grid-template-columns: 50% 50%;
+  @media (min-width: 401px) {
+    grid-template-columns: auto auto;
     margin: 0 auto;
   }
 
@@ -56,8 +60,12 @@
 }
 
 .icons {
-  font-size: 46px;
+  font-size: 36px;
   justify-self: center;
+
+  @media (min-width: 480px) {
+    font-size: 46px;
+  }
 }
 
 .skill {
@@ -67,7 +75,7 @@
 }
 
 .span {
-  font-size: 18px;
+  font-size: 22px;
 
   @media (min-width: 600px) {
     font-size: 28px;
@@ -81,6 +89,7 @@
 
 .FigmaIcon {
   width: 30px;
+  margin: auto;
 }
 
 .imgContainer {

@@ -1,5 +1,5 @@
 .footer {
-  margin: 100px auto;
+  margin: var(--gap-size-large) auto;
   padding: var(--gap-size-small);
   max-width: var(--max-page-width);
 }
@@ -7,25 +7,49 @@
 .main {
   display: flex;
   margin: 0 auto;
+  flex-direction: column;
   justify-items: center;
-  gap: var(--gap-size-small);
+  gap: var(--gap-size-large);
 
-  @media (min-width: 600px) {
-    grid-template-columns: auto auto;
+  @media (min-width: 1024px) {
+    gap: 140px;
+  }
+
+  @media (min-width: 901px) {
+    flex-direction: row;
   }
 }
 
 .container {
-  font-size: 20px;
+  display: flex;
+  flex-direction: column;
   gap: 20px;
 }
 
 .link {
-  color: #1f1f1f;
+  color: var(--main-text-color);
   text-decoration: none;
   display: block;
-  opacity: 0.7;
-  font-size: 30px;
+  font-size: 16px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+
+  @media (min-width: 400px) {
+    font-size: 20px;
+  }
+
+  @media (min-width: 400px) {
+    font-size: 24px;
+  }
+
+  @media (min-width: 480px) {
+    font-size: 28px;
+  }
+
+  @media (min-width: 600px) {
+    font-size: 30px;
+  }
 }
 
 .link:hover {
@@ -34,7 +58,7 @@
 }
 
 .contactMe {
-  font-size: 50px;
+  font-size: 46px;
   font-weight: 550;
   margin-bottom: 10px;
   display: block;
@@ -52,5 +76,5 @@
 .icon {
   font-size: 28px;
   margin-right: 20px;
-  color: #000;
+  color: var(--main-text-color);
 }

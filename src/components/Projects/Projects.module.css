@@ -24,7 +24,7 @@
   display: grid;
   grid-template-columns: auto auto;
   gap: var(--gap-size-small);
-  padding: var(--gap-size-small);
+  padding: var(--gap-size-small) 0;
   border-radius: 14px;
   border: 1px solid #dfdfdf;
   box-shadow: 2px 4px 10px #c7c6c6;

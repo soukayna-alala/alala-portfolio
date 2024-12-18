@@ -3,6 +3,7 @@ import { AboutMe } from "./components/AboutMe/AboutMe.tsx";
 import { Skills } from "./components/Skills/Skills.tsx";
 import { Projects } from "./components/Projects/Projects.tsx";
 import { Footer } from "./components/Footer/Footer.tsx";
+import { CopyRight } from "./components/CopyRight/CopyRight.tsx";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <hr />
       </main>
       <Footer />
+      <CopyRight />
     </>
   );
 }
