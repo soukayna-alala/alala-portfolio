@@ -6,7 +6,7 @@
   height: 220px;
   border: none;
   width: 240px;
-  border-radius: 12px;
+  border-radius: 14px;
 }
 
 .container {
@@ -24,12 +24,17 @@
   display: grid;
   grid-template-columns: auto auto;
   gap: var(--gap-size-small);
-  padding: var(--gap-size-small) 0;
+  padding: var(--gap-size-small) 20px;
+
   border-radius: 14px;
   border: 1px solid #dfdfdf;
   box-shadow: 2px 4px 10px #c7c6c6;
   background-color: #dfdfdf;
   justify-items: center;
+
+  @media (max-width: 320px) {
+    padding: var(--gap-size-small) 10px;
+  }
 
   @media (max-width: 1024px) {
     display: grid;
@@ -58,20 +63,6 @@
   color: #595858;
   text-align: center;
   overflow: auto;
-}
-
-.github {
-  color: #ffffff;
-  background-color: black;
-  padding: 6px 10px;
-  border-radius: 8px;
-  text-decoration: none;
-  border: none;
-  text-align: center;
-}
-
-.arrowRight {
-  margin-left: 6px;
 }
 
 .content {

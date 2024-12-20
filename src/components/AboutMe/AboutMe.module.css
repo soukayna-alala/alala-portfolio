@@ -69,32 +69,3 @@
     gap: 30px;
   }
 }
-
-/* move to button css file */
-.resumeHyperlink {
-  width: fit-content;
-  height: fit-content;
-  border: 1px solid #000;
-  padding: 10px 12px;
-  border-radius: 18px;
-  background-color: #000;
-  cursor: pointer;
-  opacity: 0.9;
-  margin: 0 auto;
-  /* delete this line*/
-  color: white !important;
-
-  @media (min-width: 600px) {
-    margin: 0;
-  }
-}
-
-.resumeArrow {
-  padding: 0 2px 0 14px;
-  color: #f5f3f0;
-}
-
-.myResume {
-  color: #f5f3f0;
-  font-size: 18px;
-}

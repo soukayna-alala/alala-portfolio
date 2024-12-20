@@ -5,7 +5,11 @@ export interface Props extends AnchorHTMLAttributes<HTMLAnchorElement> {
   label: string;
   icon?: IconDefinition;
   variant?: Variant;
-  // size: string;
+  size?: Size;
+  isAnchor?: boolean;
+  disabled?: boolean;
 }
 
 export type Variant = "primary" | "secondary";
+
+export type Size = "small" | "regular";

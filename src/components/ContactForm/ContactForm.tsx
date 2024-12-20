@@ -2,18 +2,17 @@ import styles from "./ContactForm.module.css";
 import Swal from "sweetalert2";
 import { useRef } from "react";
 import { useState } from "react";
+import { Button } from "../Button/Button.tsx";
 
 export function ContactForm() {
-  const { fieldMessage, field, formSection, form, button, error } = styles;
+  const { fieldMessage, field, formSection, form, error } = styles;
 
-  const regEx = /^[a-zA-z0-9.-_+]+@[a-z]+\.[a-z]{2,4}$/;
+  const regEx = /^\S+@\S+\.\S+$/;
   const [emailError, setEmailError] = useState("");
   const nameRef = useRef<HTMLInputElement>(null!);
   const emailRef = useRef<HTMLInputElement>(null!);
   const messageRef = useRef<HTMLTextAreaElement>(null!);
-  const isFormValid = !!emailError.length;
-
-  //emailError.length ? true : false;
+  const isFormInvalid = !!emailError.length;
 
   function emailValidation() {
     const emailValue = emailRef.current.value;
@@ -57,6 +56,8 @@ export function ContactForm() {
   return (
     <>
       <section className={formSection}>
+        <h1>isFormInvalid = {isFormInvalid.toString()}</h1>
+
         <form className={form} onSubmit={onSubmit}>
           <div>
             <input
@@ -91,14 +92,13 @@ export function ContactForm() {
               required
             ></textarea>
           </div>
-          <button
-            className={button}
-            type="submit"
+          <Button
+            label={"Submit"}
+            variant={"secondary"}
             onClick={emailValidation}
-            disabled={isFormValid}
-          >
-            Submit
-          </button>
+            disabled={isFormInvalid}
+            type="submit"
+          />
         </form>
       </section>
     </>

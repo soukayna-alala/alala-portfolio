@@ -1,7 +1,7 @@
 import styles from "./Projects.module.css";
 import { projectList } from "./constants.ts";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { Button } from "../Button/Button.tsx";
 
 export function Projects() {
   const {
@@ -13,8 +13,6 @@ export function Projects() {
     container,
     img,
     projectContainer,
-    github,
-    arrowRight,
   } = styles;
   return (
     <section className={main} id="projects">
@@ -26,10 +24,13 @@ export function Projects() {
             <div className={content}>
               <h4 className={h4}>{i.heading}</h4>
               <p className={paragraph}>{i.description}</p>
-              <a className={github} href={i.gitHubLink}>
-                Github
-                <FontAwesomeIcon className={arrowRight} icon={faArrowRight} />
-              </a>
+
+              <Button
+                label={"Github"}
+                size={"small"}
+                icon={faArrowRight}
+                isAnchor={true}
+              />
             </div>
           </div>
         ))}

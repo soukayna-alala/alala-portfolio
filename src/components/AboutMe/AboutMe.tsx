@@ -8,18 +8,7 @@ export function AboutMe() {
   const iso8601Dob = "2000/06/20"; // my dob in ISO 8601 format
   const dateOfBirth = dayjs(iso8601Dob);
   const myAgeInYears = dayjs().diff(dateOfBirth, "years");
-
-  const {
-    h1,
-    bold,
-    paragraph,
-    container,
-    aboutMeImage,
-    paragraphGap,
-    resumeHyperlink,
-    myResume,
-    resumeArrow,
-  } = styles;
+  const { h1, bold, paragraph, container, aboutMeImage, paragraphGap } = styles;
 
   return (
     <>
@@ -67,8 +56,22 @@ export function AboutMe() {
         {/*  <span className={myResume}>My resume</span>*/}
         {/*  <FontAwesomeIcon className={resumeArrow} icon={faArrowRight} />*/}
         {/*</a>*/}
-        <Button label={"My resume"} icon={faArrowRight} variant={"primary"} />
-        <Button label={"second button"} variant={"secondary"} />
+        <Button
+          label={"My resume"}
+          icon={faArrowRight}
+          variant={"primary"}
+          target={"_blank"}
+          href={
+            "https://github.com/soukayna-alala/cv/blob/1be4b4af8887a8ffea5fd2ce490298b5bd4bb483/Soukayna-Alala-Junior-Front-End-Developer.pdf"
+          }
+        />
+        <Button
+          label={"second button"}
+          variant={"secondary"}
+          size={"small"}
+          isAnchor={true}
+        />
+        {/*<Button label={"no variant passed in"} />*/}
       </div>
     </>
   );

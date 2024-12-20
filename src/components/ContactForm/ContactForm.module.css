@@ -8,21 +8,6 @@
   padding: 0;
 }
 
-/*.formSection {*/
-/*  width: 100%;*/
-/*  background-color: red;*/
-/*}*/
-
-.button {
-  width: fit-content;
-  padding: 14px 60px;
-  border: none;
-  background-color: #fff;
-  border-radius: 6px;
-  box-shadow: 4px 4px 4px #dad5d5;
-  cursor: pointer;
-}
-
 .fieldMessage {
   max-height: 200px;
   min-height: 100px;
@@ -49,4 +34,5 @@
 .error {
   padding: 14px 0 0 14px;
   font-size: 16px;
+  color: red;
 }
