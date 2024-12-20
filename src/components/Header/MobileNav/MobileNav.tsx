@@ -25,7 +25,6 @@ export function MobileNav() {
             icon={faXmark}
             onClick={() => setDisplayNav(false)}
           />
-
           <Links />
         </nav>
       ) : null}

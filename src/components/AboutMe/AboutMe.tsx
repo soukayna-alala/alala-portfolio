@@ -1,8 +1,8 @@
 import { Typewriter } from "react-simple-typewriter";
 import styles from "./AboutMe.module.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import dayjs from "dayjs";
+import { Button } from "../Button/Button.tsx";
 
 export function AboutMe() {
   const iso8601Dob = "2000/06/20"; // my dob in ISO 8601 format
@@ -45,7 +45,7 @@ export function AboutMe() {
           </p>
           <p className={paragraph}>
             I am dedicated to building my expertise in front-end development,
-            including{" "}
+            including&nbsp;
             <span className={bold}>
               HTML, CSS, JavaScript, TypeScript, React, and Git
             </span>
@@ -63,10 +63,12 @@ export function AboutMe() {
             issues, and be able to work independently in a team.
           </p>
         </div>
-        <a className={resumeHyperlink}>
-          <span className={myResume}>My resume</span>
-          <FontAwesomeIcon className={resumeArrow} icon={faArrowRight} />
-        </a>
+        {/*<a className={resumeHyperlink}>*/}
+        {/*  <span className={myResume}>My resume</span>*/}
+        {/*  <FontAwesomeIcon className={resumeArrow} icon={faArrowRight} />*/}
+        {/*</a>*/}
+        <Button label={"My resume"} icon={faArrowRight} variant={"primary"} />
+        <Button label={"second button"} variant={"secondary"} />
       </div>
     </>
   );

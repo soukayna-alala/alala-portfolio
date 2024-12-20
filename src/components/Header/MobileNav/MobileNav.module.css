@@ -3,7 +3,8 @@
   top: 0;
   right: 0;
   height: 100vh;
-  background-color: rgba(151, 150, 150, 0.8);
+  background-color: rgba(108, 107, 107, 0.8);
+  color: #fff;
 
   display: block;
   justify-items: left;
@@ -11,6 +12,7 @@
 
   @media (min-width: 768px) {
     display: none;
+    color: var(--main-text-color);
   }
 }
 

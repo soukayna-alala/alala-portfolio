@@ -20,6 +20,7 @@
   background-color: #fff;
   border-radius: 6px;
   box-shadow: 4px 4px 4px #dad5d5;
+  cursor: pointer;
 }
 
 .fieldMessage {
