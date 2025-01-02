@@ -56,8 +56,6 @@ export function ContactForm() {
   return (
     <>
       <section className={formSection}>
-        <h1>isFormInvalid = {isFormInvalid.toString()}</h1>
-
         <form className={form} onSubmit={onSubmit}>
           <div>
             <input
@@ -94,6 +92,7 @@ export function ContactForm() {
           </div>
           <Button
             label={"Submit"}
+            size={"regular"}
             variant={"secondary"}
             onClick={emailValidation}
             disabled={isFormInvalid}

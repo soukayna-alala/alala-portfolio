@@ -5,7 +5,7 @@ import dayjs from "dayjs";
 import { Button } from "../Button/Button.tsx";
 
 export function AboutMe() {
-  const iso8601Dob = "2000/06/20"; // my dob in ISO 8601 format
+  const iso8601Dob = "2000/06/20";
   const dateOfBirth = dayjs(iso8601Dob);
   const myAgeInYears = dayjs().diff(dateOfBirth, "years");
   const { h1, bold, paragraph, container, aboutMeImage, paragraphGap } = styles;
@@ -52,26 +52,17 @@ export function AboutMe() {
             issues, and be able to work independently in a team.
           </p>
         </div>
-        {/*<a className={resumeHyperlink}>*/}
-        {/*  <span className={myResume}>My resume</span>*/}
-        {/*  <FontAwesomeIcon className={resumeArrow} icon={faArrowRight} />*/}
-        {/*</a>*/}
         <Button
           label={"My resume"}
+          size={"regular"}
           icon={faArrowRight}
           variant={"primary"}
           target={"_blank"}
+          isAnchor={true}
           href={
             "https://github.com/soukayna-alala/cv/blob/1be4b4af8887a8ffea5fd2ce490298b5bd4bb483/Soukayna-Alala-Junior-Front-End-Developer.pdf"
           }
         />
-        <Button
-          label={"second button"}
-          variant={"secondary"}
-          size={"small"}
-          isAnchor={true}
-        />
-        {/*<Button label={"no variant passed in"} />*/}
       </div>
     </>
   );

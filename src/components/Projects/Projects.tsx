@@ -28,8 +28,10 @@ export function Projects() {
               <Button
                 label={"Github"}
                 size={"small"}
+                variant={"primary"}
                 icon={faArrowRight}
                 isAnchor={true}
+                href={i.gitHubLink}
               />
             </div>
           </div>
