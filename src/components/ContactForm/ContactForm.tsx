@@ -1,6 +1,6 @@
 import styles from "./ContactForm.module.css";
 import Swal from "sweetalert2";
-import { useRef } from "react";
+import { FormEvent, useRef } from "react";
 import { useState } from "react";
 import { Button } from "../Button/Button.tsx";
 
@@ -20,12 +20,9 @@ export function ContactForm() {
     setEmailError(isEmailValid ? "" : "Email is not valid");
   }
 
-  const onSubmit = async (event: {
-    preventDefault: () => void;
-    target: HTMLFormElement | undefined;
-  }) => {
+  const onSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    const formData = new FormData(event.target);
+    const formData = new FormData(event.currentTarget);
 
     formData.append("access_key", "d20c2e5d-55b1-4797-bf63-4587401626ef");
 
