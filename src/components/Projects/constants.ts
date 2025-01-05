@@ -3,7 +3,7 @@ import { IProject } from "./interfaces.ts";
 const weatherAppURL = " https://openweathermap.org/api";
 export const projectList: IProject[] = [
   {
-    imgSrc: "calculator.jpeg",
+    imgSrc: "calculator.jpg",
     imgAlt: "Calculator screenShot",
     heading: "Calculator",
     description: "I developed this app using Javascript, HTML, CSS, Git.",
