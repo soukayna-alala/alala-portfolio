@@ -31,8 +31,8 @@ export function Skills() {
         <div className={imgContainer}>
           <img
             className={myImg}
-            src="skillsImg.jpg"
-            alt="Soukayna alala picture"
+            src="soukayna_alala_skills.jpg"
+            alt="Soukayna alala image"
           />
         </div>
 

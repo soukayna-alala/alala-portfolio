@@ -23,8 +23,8 @@ export function AboutMe() {
       <div className={container}>
         <img
           className={aboutMeImage}
-          src="aboutMePic.jpg"
-          alt="Soukayna Alala's image "
+          src="soukayna_alala.jpg"
+          alt="Soukayna Alala piture "
         />
         <div className={paragraphGap}>
           <p className={paragraph}>
