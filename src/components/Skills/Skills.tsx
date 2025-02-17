@@ -27,7 +27,6 @@ export function Skills() {
   return (
     <>
       <div className={title}>My Skills</div>
-
       <div className={mainContainer} id="skills">
         <div className={imgContainer}>
           <img
