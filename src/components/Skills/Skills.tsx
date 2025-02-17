@@ -6,6 +6,7 @@ import {
   faCss3,
   faHtml5,
   faGit,
+  faNodeJs,
 } from "@fortawesome/free-brands-svg-icons";
 
 export function Skills() {
@@ -82,6 +83,14 @@ export function Skills() {
           <div className={skill}>
             <FontAwesomeIcon className={icons} icon={faGit} />
             <span className={span}>Git</span>
+          </div>
+          <div className={skill}>
+            <FontAwesomeIcon className={icons} icon={faNodeJs} />
+            <span className={span}>Node.js</span>
+          </div>
+          <div className={skill}>
+            <img className={tsIcon} src="LogosVitest.svg" alt="vitest icon" />
+            <span className={span}>Vitest</span>
           </div>
         </div>
       </div>

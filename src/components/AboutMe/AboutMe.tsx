@@ -36,7 +36,7 @@ export function AboutMe() {
             I am dedicated to building my expertise in front-end development,
             including&nbsp;
             <span className={bold}>
-              HTML, CSS, JavaScript, TypeScript, React, and Git
+              React, JavaScript, TypeScript, Node.js, HTML, CSS, Vitest, and Git
             </span>
             .
           </p>
